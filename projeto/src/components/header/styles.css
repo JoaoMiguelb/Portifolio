@@ -1,0 +1,28 @@
+header {
+    width: 100%;
+    background-color: #0E1E2B;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header svg {
+    color: #C9D0D6;
+    font-size: 30px;
+    cursor: pointer;
+    opacity: .7;
+    transition: .3s;
+}
+
+header svg:hover {
+    opacity: 1;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
