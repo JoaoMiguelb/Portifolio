@@ -1,0 +1,23 @@
+.about h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.about p{
+    padding: 15px;
+    text-indent: 32px;
+}
+
+.about a {
+    text-decoration: none;
+    color: #5a7dbf;
+    transition: .3s;
+}
+
+.about a:hover {
+    background-color: #394760;
+}
+
+.about a:after {
+    content: '\1f517';
+}

@@ -1,0 +1,51 @@
+.home {
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home img {
+    height: 300px;
+}
+
+.home-text {
+    font-size: 22px;
+    padding: 10px;
+}
+
+.home-text p {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+/* Estilização para tablet */   
+
+@media screen and (min-width: 768px) {
+    .home {
+       flex-direction: row;
+       margin: 40px;
+       gap: 10px;
+    }
+
+    .home img {
+        height: 350px;
+    }
+}
+
+/* Estilização para desktop*/
+
+@media screen and (min-width: 1024px) {
+    .home img {
+        height: 400px;
+    }
+
+    .home-text {
+        font-size: 29px;
+        max-width: 40%;
+        padding: 0;
+    }
+
+}

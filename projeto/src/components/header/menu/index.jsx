@@ -3,11 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 import './styles.css'
 
-const Menu = ({visible, setVisible}) => {
-    
+const Menu = ({ visible }) => {
 
     return (
-        <ul className="menu">
+        <ul className={`menu ${visible ? 'visible' : ''}`}>
             <NavLink to='/' >Home</NavLink>
             <NavLink to='/about' >Sobre mim</NavLink>
             <NavLink to='/skills' >Skills</NavLink>
@@ -17,3 +16,4 @@ const Menu = ({visible, setVisible}) => {
 };
 
 export default Menu;
+    

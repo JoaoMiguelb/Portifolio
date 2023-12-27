@@ -1,28 +1,27 @@
-// react
-import { useState } from 'react'
-
-
-// icons
+// Header.js
+import { useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoMdClose } from "react-icons/io";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
-
-// CSS
-import './styles.css'
-import Menu from './menu';
+import './styles.css';
+import Menu from './menu/index';
 
 const Header = () => {
-    const [visible, setVisible] = useState(false)
+    const [visible, setVisible] = useState(false);
+    
 
     const handleClickVisible = () => {
-        setVisible(!visible)
+        setVisible(!visible);
     }
 
     return (
         <header>
-            <div className="menu-hamburguer">
-                <RxHamburgerMenu onClick={handleClickVisible}/>
-                {visible && <Menu/>}
-            </div>
+            {visible
+                ? <div><IoMdClose onClick={handleClickVisible} /></div>
+                : <div className="menu-hamburguer" onClick={handleClickVisible}><RxHamburgerMenu /></div>
+            }
+            {visible && <Menu visible={visible} />}
+            
             <div className="header-icons">
                 <FaGithub />
                 <FaLinkedin />
@@ -32,4 +31,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Header;
