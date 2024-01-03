@@ -13,7 +13,6 @@
     transform: translateY(-100%);
     display: none;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-
 }
 
 .menu.visible {
@@ -37,3 +36,32 @@
     color: #293744;
 }
 
+/* Estilização para tablet  */
+
+@media screen and (min-width: 768px) {
+    .menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        background-color: unset;
+        box-shadow: none;
+        transform: translateY(0);
+    }
+
+}
+
+/* Estilização para desktop */
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        font-size: 18px;
+    }
+}
+
+/* Estilização para desktop G*/
+
+@media screen and (min-width: 1440px) {
+    .menu {
+        font-size: 20px;
+    }
+}

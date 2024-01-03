@@ -28,3 +28,17 @@ header svg:hover {
 
 /* Estilização para tablet */
 
+
+@media screen and (min-width: 768px) {
+    .menu-hamburguer {
+        display: none;
+    }
+}
+
+/* Estilização para desktop */
+
+@media screen and (min-width: 1440px) {
+    .header-icons svg {
+        font-size: 40px;
+    }
+}

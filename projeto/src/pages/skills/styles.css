@@ -1,0 +1,53 @@
+.skills {
+    text-align: center;
+}
+
+.skills div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.skills span  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    background-color: #EFEEF6;
+    color: #293744;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    min-width: 170px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.169);
+    transition: .3s;
+    cursor: default;
+}
+
+.skills span:hover {
+    transform: translateY(-5px);
+}
+
+.skills span svg {
+    font-size: 70px;
+}
+
+/* Estilização para tablet */
+
+@media screen and (min-width: 768px) {
+    .skills div {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .skills span {
+        font-size: 25px;
+    }
+
+    .skills span svg {
+        font-size: 90px;
+    }
+}

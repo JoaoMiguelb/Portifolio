@@ -1,0 +1,53 @@
+.projects {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 5px;
+    font-size: 20px;
+}
+
+.projects img {
+    height: 200px;
+    transition: .5s;
+}
+
+.projects img:hover {
+    transform: translateY(5px);
+}
+
+/* Estilização para tablet */
+
+@media screen and (min-width: 768px) {
+    .projects {
+        flex-direction: row;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .projects img {
+        height: 300px;
+    }
+
+    .projects span {
+        width: 50%;
+    }
+}
+
+/* Estilização para desktop G*/
+
+@media screen and (min-width: 1440px) {
+   .projects img {
+    height: 400px;
+   }
+
+   .projects {
+    font-size: 28px;
+   }
+
+   .projects span {
+    width: 30%;
+   }
+}

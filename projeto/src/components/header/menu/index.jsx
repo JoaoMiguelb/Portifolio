@@ -1,6 +1,7 @@
-// Menu.js
+// React-router-dom
 import { NavLink } from 'react-router-dom';
 
+// CSS
 import './styles.css'
 
 const Menu = ({ visible }) => {
