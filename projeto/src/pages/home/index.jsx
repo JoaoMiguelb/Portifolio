@@ -3,7 +3,8 @@ import foto from '../../img/minha-foto.png'
 
 // Icons
 import { FaFileDownload, FaWhatsapp  } from "react-icons/fa";
-import { MdEmail } from "react-icons/md"
+
+import pdf from '../../img/Curriculo.pdf'
 
 
 // CSS
@@ -18,8 +19,8 @@ const Home = () => {
         <h1>Desenvolvedor Front-end</h1>
         <p>Utilizando a biblioteca React para desenvolver e aplicando em sites 100% responsivos com a orientação Mobile First.</p>
         <div className="home-contact">
-          <a href="">Currículo <FaFileDownload/> </a>
-          <a href=""> Contato <FaWhatsapp/> </a>
+          <a href={pdf} target='_blank'>Currículo <FaFileDownload/> </a>
+          <a href="https://wa.me/5551991643525" target='_blank'> Contato <FaWhatsapp/> </a>
         </div>
       </div>
     </div>
