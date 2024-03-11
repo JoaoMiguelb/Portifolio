@@ -7,6 +7,7 @@
     gap: 5px;
     margin: 20px 5px;
     font-size: 20px;
+    gap: 50px;
 }
 
 .projects img {
@@ -18,21 +19,33 @@
     transform: translateY(5px);
 }
 
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* Estilização para tablet */
 
 @media screen and (min-width: 768px) {
     .projects {
-        flex-direction: row;
+        flex-direction: column;
         padding: 10px;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .projects img {
-        height: 300px;
+        height: 200px;
     }
 
     .projects span {
         width: 50%;
+    }
+
+    .box {
+        flex-direction: row;
     }
 }
 
